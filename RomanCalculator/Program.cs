@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RomanCalculator
+﻿namespace RomanCalculator
 {
     class Programm
     {
         static void Main()
         {
-            Console.WriteLine(RomanNum.ToRoman(789));
-            Calculator.Evaluate("MMMDCCXXIV - MMCCXXIX");
+            Console.WriteLine("Enter the expression:");
+
+            string expression = "(MMMDCCXXIV - MMCCXXIX) * II";
+            //string expression = Console.ReadLine();
+            Console.WriteLine("Calculating an expression: " + expression);
+
+            Console.WriteLine("Answer: " + Calculator.Evaluate(expression));
         }
       
     }
